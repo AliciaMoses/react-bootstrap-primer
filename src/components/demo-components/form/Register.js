@@ -36,7 +36,7 @@ const Register = () => {
     >
       <Form.Group controlId="formFirstName">
         <Form.Label>First Name</Form.Label>
-        <Form.Control required type="text" placeholder="Enter first name" />
+        <Form.Control required type="text" placeholder="Enter first name" minLength="2" maxLength="20"/>
         <Form.Control.Feedback type="invalid">
           Please enter a valid first name.
         </Form.Control.Feedback>
@@ -44,7 +44,7 @@ const Register = () => {
 
       <Form.Group controlId="formLastName">
         <Form.Label>Last Name</Form.Label>
-        <Form.Control required type="text" placeholder="Enter last name" />
+        <Form.Control required type="text" placeholder="Enter last name" minLength="2" maxLength="20" />
         <Form.Control.Feedback type="invalid">
           Please enter a valid last name.
         </Form.Control.Feedback>
@@ -66,6 +66,7 @@ const Register = () => {
           type="password"
           placeholder="Password"
           onChange={handlePasswordChange}
+          minLength="8" maxLength="30"
         />
         <Form.Control.Feedback type="invalid">
           Please enter a password.
