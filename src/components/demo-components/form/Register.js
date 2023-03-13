@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import "./Forms.css";
 
 const Register = () => {
@@ -28,6 +28,7 @@ const Register = () => {
   };
 
   return (
+    <Container className="px-4 py-3">
     <Form
       ref={formRef}
       noValidate
@@ -91,6 +92,7 @@ const Register = () => {
         Register
       </Button>
     </Form>
+    </Container>
   );
 };
 
