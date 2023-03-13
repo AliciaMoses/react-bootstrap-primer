@@ -6,13 +6,14 @@ import Home from "./components/pages/home/Home";
 import Intro from "./components/pages/getting-started/GettingStarted";
 import Layouts from "./components/pages/layouts/Layouts";
 import Navbars from "./components/pages/navbars/Navbars";
-
+import AppNavbar from "./components/base-components/app-navbar/AppNavbar";
 
 
 
 function App() {
   return (
     <>
+      <AppNavbar />
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
