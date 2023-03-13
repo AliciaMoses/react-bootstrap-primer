@@ -1,11 +1,11 @@
 import React from "react";
 
-const Home = () =>{
+const Forms = () =>{
     return (
         <>
-        <h1>Home</h1>
+        <h1>Forms</h1>
         </>
     )
 }
 
-export default Home;
+export default Forms;
