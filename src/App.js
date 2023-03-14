@@ -8,6 +8,10 @@ import Intro from "./components/pages/getting-started/GettingStarted";
 import Layouts from "./components/pages/layouts/Layouts";
 import Navbars from "./components/pages/navbars/Navbars";
 import Typography from "./components/pages/typography/Typography";
+import Cards from "./components/pages/cards/Cards";
+import CardGroups from "./components/pages/card-groups/CardGroups";
+import DynamicCards from "./components/pages/dynamic-cards/DynamicCards";
+
 
 function App() {
   return (
@@ -22,7 +26,9 @@ function App() {
           <Route exact path="/layouts" element={<Layouts/>} />
           <Route exact path="/navbars" element={<Navbars/>} />
           <Route exact path="/typography" element={<Typography/>} />
-       
+          <Route exact path="/cards" element={<Cards/>} />
+          <Route exact path="/card-groups" element={<CardGroups/>} />
+          <Route exact path="/dynamic-cards" element={<DynamicCards/>} />
         </Routes>
       </BrowserRouter>
     </>
