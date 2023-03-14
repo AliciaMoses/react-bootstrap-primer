@@ -7,8 +7,7 @@ import Home from "./components/pages/home/Home";
 import Intro from "./components/pages/getting-started/GettingStarted";
 import Layouts from "./components/pages/layouts/Layouts";
 import Navbars from "./components/pages/navbars/Navbars";
-
-
+import Typography from "./components/pages/typography/Typography";
 
 function App() {
   return (
@@ -22,6 +21,8 @@ function App() {
           <Route exact path="/getting-started" element={<Intro/>} />
           <Route exact path="/layouts" element={<Layouts/>} />
           <Route exact path="/navbars" element={<Navbars/>} />
+          <Route exact path="/typography" element={<Typography/>} />
+       
         </Routes>
       </BrowserRouter>
     </>
