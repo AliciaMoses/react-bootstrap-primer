@@ -6,6 +6,7 @@ const PageList = [
     { path: '/', label: 'Home' },
     { path: '/layouts', label: 'Layouts' },
     { path: '/navbars', label: 'Navbars' },
+    { path: '/typography', label: 'Typography' },
 ]
 
 export default PageList;
