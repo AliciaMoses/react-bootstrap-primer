@@ -3,7 +3,7 @@ import Layout from "../../base-components/layout/Layout";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Container } from "react-bootstrap";
-import formCode from "./forrmCode";
+import formCode from "./formCode";
 import Login from "../../demo-components/form/Login";
 import Register from "../../demo-components/form/Register";
 

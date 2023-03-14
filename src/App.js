@@ -1,6 +1,7 @@
 import "./App.css";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Buttons from "./components/pages/buttons/Buttons";
+import DynamicForms from "./components/pages/dynamic-forms/DynamicForms";
 import Forms from "./components/pages/forms/Forms";
 import Home from "./components/pages/home/Home";
 import Intro from "./components/pages/getting-started/GettingStarted";
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/buttons" element={<Buttons/>} />
+          <Route exact path="/dynamic-forms" element={<DynamicForms/>} />
           <Route exact path="/forms" element={<Forms/>} />
           <Route exact path="/getting-started" element={<Intro/>} />
           <Route exact path="/layouts" element={<Layouts/>} />
