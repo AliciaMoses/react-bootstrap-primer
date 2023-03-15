@@ -2,10 +2,12 @@ import React from "react";
 import "./Magazine.css";
 import { Container, Row, Col, Image, ListGroup, Nav } from "react-bootstrap";
 import CommentsSection from "./Comments";
+import MagazineNav from "./MagazineNav"
 
 const Magazine = () => {
   return (
     <>
+    <MagazineNav />
       <body>
         <main>
           <Container>

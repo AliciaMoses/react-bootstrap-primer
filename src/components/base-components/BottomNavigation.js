@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap"
 import PageList from "./PageList";
 
 function BottomNavigation() {
@@ -22,23 +23,23 @@ function BottomNavigation() {
   };
 
   return (
-    <nav>
-      <ul>
-        {currentPageIndex > 0 && (
-          <li>
-            <button onClick={goToPreviousPage}>Previous</button>
-          </li>
-        )}
-        <li key={currentPage.path}>
-          <Link to={currentPage.path}>{currentPage.label}</Link>
-        </li>
-        {currentPageIndex < PageList.length - 1 && (
-          <li>
-            <button onClick={goToNextPage}>Next</button>
-          </li>
-        )}
-      </ul>
-    </nav>
+    <Navbar bg="light" expand="md" fixed="bottom">
+    <Nav className="mx-auto">
+      {currentPageIndex > 0 && (
+        <Nav.Item>
+          <Nav.Link onClick={goToPreviousPage}>Previous</Nav.Link>
+        </Nav.Item>
+      )}
+      <Nav.Item>
+        <Nav.Link disabled>{currentPage.label}</Nav.Link>
+      </Nav.Item>
+      {currentPageIndex < PageList.length - 1 && (
+        <Nav.Item>
+          <Nav.Link onClick={goToNextPage}>Next</Nav.Link>
+        </Nav.Item>
+      )}
+    </Nav>
+  </Navbar>
   );
 }
 

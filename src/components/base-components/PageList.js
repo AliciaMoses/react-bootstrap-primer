@@ -1,4 +1,5 @@
 const PageList = [
+  { path: "/", label: "Home" },
   { path: "/getting-started", label: "Getting Started" },
   { path: "/typography", label: "Typography" },
   { path: "/buttons", label: "Buttons" },
@@ -12,9 +13,6 @@ const PageList = [
   { path: "/examples/landing-page", label: "Example: Landing Page" },
   { path: "/examples/social-media-feed", label: "Example: Social Media Feed" },
   { path: "/examples/magazine", label: "Example: Magazine" },
-  { path: "/", label: "Home" },
 ];
-
-PageList.find((page) => page.label === "Home").path = "/getting-started";
 
 export default PageList;
