@@ -14,6 +14,7 @@ import DynamicCards from "./components/pages/dynamic-cards/DynamicCards";
 import SocialMediaFeed from "./components/pages/examples/social-media/SocialMediaFeed";
 import LandingPage from "./components/pages/examples/landing-page/LandingPage";
 import Magazine from "./components/pages/examples/magazine/Magazine";
+import BottomNavigation from "./components/base-components/BottomNavigation";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/examples/landing-page" element={<LandingPage/>} />
           <Route exact path="/examples/magazine" element={<Magazine/>} />
         </Routes>
+        <BottomNavigation />
       </BrowserRouter>
     </>
   );
