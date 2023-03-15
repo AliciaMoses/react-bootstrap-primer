@@ -11,7 +11,9 @@ import Typography from "./components/pages/typography/Typography";
 import Cards from "./components/pages/cards/Cards";
 import CardGroups from "./components/pages/card-groups/CardGroups";
 import DynamicCards from "./components/pages/dynamic-cards/DynamicCards";
-
+import SocialMediaFeed from "./components/pages/examples/social-media/SocialMediaFeed";
+import LandingPage from "./components/pages/examples/landing-page/LandingPage";
+import Magazine from "./components/pages/examples/magazine/Magazine";
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
           <Route exact path="/cards" element={<Cards/>} />
           <Route exact path="/card-groups" element={<CardGroups/>} />
           <Route exact path="/dynamic-cards" element={<DynamicCards/>} />
+          <Route exact path="/examples/social-media-feed" element={<SocialMediaFeed/>} />
+          <Route exact path="/examples/landing-page" element={<LandingPage/>} />
+          <Route exact path="/examples/magazine" element={<Magazine/>} />
         </Routes>
       </BrowserRouter>
     </>

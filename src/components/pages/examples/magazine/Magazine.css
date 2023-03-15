@@ -1,0 +1,10 @@
+main{
+    margin-top: 30px;
+}
+
+.article-paragraph::first-letter {
+    font-size: 8.5em;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.5rem;
+  }
