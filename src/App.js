@@ -15,6 +15,7 @@ import SocialMediaFeed from "./components/pages/examples/social-media/SocialMedi
 import LandingPage from "./components/pages/examples/landing-page/LandingPage";
 import Magazine from "./components/pages/examples/magazine/Magazine";
 import BottomNavigation from "./components/base-components/BottomNavigation";
+import ExamplesPage from "./components/pages/example-main-page/example";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/examples/social-media-feed" element={<SocialMediaFeed/>} />
           <Route exact path="/examples/landing-page" element={<LandingPage/>} />
           <Route exact path="/examples/magazine" element={<Magazine/>} />
+          <Route exact path="/examples/" element={<ExamplesPage/>} />
         </Routes>
         <BottomNavigation />
       </BrowserRouter>
