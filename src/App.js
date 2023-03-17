@@ -1,5 +1,5 @@
 import "./App.css";
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Buttons from "./components/pages/buttons/Buttons";
 import DynamicForms from "./components/pages/dynamic-forms/DynamicForms";
 import Forms from "./components/pages/forms/Forms";
@@ -15,7 +15,7 @@ import SocialMediaFeed from "./components/pages/examples/social-media/SocialMedi
 import LandingPage from "./components/pages/examples/landing-page/LandingPage";
 import Magazine from "./components/pages/examples/magazine/Magazine";
 import ExamplesPage from "./components/pages/example-main-page/example";
-
+import WithBottomNav from "./components/base-components/withBottomNav";
 
 function App() {
   return (
@@ -23,20 +23,52 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/buttons" element={<Buttons/>} />
-          <Route exact path="/dynamic-forms" element={<DynamicForms/>} />
-          <Route exact path="/forms" element={<Forms/>} />
-          <Route exact path="/getting-started" element={<Intro/>} />
-          <Route exact path="/layouts" element={<Layouts/>} />
-          <Route exact path="/navbars" element={<Navbars/>} />
-          <Route exact path="/typography" element={<Typography/>} />
-          <Route exact path="/cards" element={<Cards/>} />
-          <Route exact path="/card-groups" element={<CardGroups/>} />
-          <Route exact path="/dynamic-cards" element={<DynamicCards/>} />
-          <Route exact path="/examples/social-media-feed" element={<SocialMediaFeed/>} />
-          <Route exact path="/examples/landing-page" element={<LandingPage/>} />
-          <Route exact path="/examples/magazine" element={<Magazine/>} />
-          <Route exact path="/examples/" element={<ExamplesPage/>} />
+          <Route exact path="/buttons" element={<Buttons />} />
+          <Route exact path="/dynamic-forms" element={<DynamicForms />} />
+          <Route exact path="/forms" element={<Forms />} />
+          <Route exact path="/getting-started" element={<Intro />} />
+          <Route exact path="/layouts" element={<Layouts />} />
+          <Route exact path="/navbars" element={<Navbars />} />
+          <Route exact path="/typography" element={<Typography />} />
+          <Route exact path="/cards" element={<Cards />} />
+          <Route exact path="/card-groups" element={<CardGroups />} />
+          <Route exact path="/dynamic-cards" element={<DynamicCards />} />
+          <Route
+            exact
+            path="/examples/social-media-feed"
+            element={
+              <WithBottomNav>
+                <SocialMediaFeed />
+              </WithBottomNav>
+            }
+          />
+          <Route
+            exact
+            path="/examples/landing-page"
+            element={
+              <WithBottomNav>
+                <LandingPage />
+              </WithBottomNav>
+            }
+          />
+          <Route
+            exact
+            path="/examples/magazine"
+            element={
+              <WithBottomNav>
+                <Magazine />
+              </WithBottomNav>
+            }
+          />
+          <Route
+            exact
+            path="/examples/"
+            element={
+              <WithBottomNav>
+                <ExamplesPage />
+              </WithBottomNav>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </>
