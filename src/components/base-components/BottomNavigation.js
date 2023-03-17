@@ -1,12 +1,23 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap"
 import PageList from "./PageList";
 
 function BottomNavigation() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const currentPage = PageList[currentPageIndex];
+
+  useEffect(() =>{
+    const pageIndex = PageList.findIndex(
+      (page) => page.path === location.pathname
+    );
+    if (pageIndex !== -1){
+      setCurrentPageIndex(pageIndex);
+    }
+  }, [location]);
+
 
   const goToNextPage = () => {
     if (currentPageIndex < PageList.length - 1) {
