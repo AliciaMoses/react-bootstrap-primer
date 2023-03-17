@@ -9,15 +9,14 @@ const Home = () => {
       <h1 className="text-center">Welcome!</h1>
       <Container>
         <p className="lead text-center">
-          This app should serve as a guide of React Bootstrap and is designed to
-          help you understand the functionality of various components, explore
-          their use cases, and learn how to implement them in your projects.
+          This app serves as a guide to React Bootstrap, designed to help you
+          understand the functionality of various components, explore their use
+          cases, and learn how to implement them in your projects.
         </p>
         <p className="lead text-center">
-          Feel free to jump right into any of the sections below, or, if you
-          want more of an introduction to using React with Bootstrap, take a
-          look at the 'Getting Started' section for some helpful explainers and
-          tips.
+          Feel free to dive into any of the sections below. If you would like a
+          more comprehensive introduction to using React with Bootstrap, check
+          out the 'Getting Started' section for helpful explainers and tips.
         </p>
       </Container>
       <Container style={{ maxWidth: "70%", paddingTop: "15px" }}>

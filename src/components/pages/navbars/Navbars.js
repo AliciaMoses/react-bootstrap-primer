@@ -20,13 +20,13 @@ const Navbars = () => {
           dropdown menus.
         </p>
       </Container>
-      <p className="lead">Dropdown Navbar</p>
+      <p className="lead"><strong>Dropdown Navbar</strong></p>
       <DropdownNavbar />
       <br></br>
       <p className="lead text-center">
         The navbar component can incoprorate a form, such as for user searches.
       </p>
-      <p className="lead">Search Navbar</p>
+      <p className="lead"><strong>Search Navbar</strong></p>
       <LeftSearchNavbar />
       <Container style={{ maxWidth: "750px" }}>
         <br></br>
@@ -37,10 +37,10 @@ const Navbars = () => {
           icon is clicked.
         </p>
       </Container>
-      <p className="lead">Transparent Navbar</p>
+      <p className="lead"><strong>Transparent Navbar</strong></p>
       <TransparentNavbar />
       <br></br>
-      <p className="lead">Dark Navbar</p>
+      <p className="lead"><strong>Dark Navbar</strong></p>
       <DarkNavbar />
       <Container style={{ maxWidth: "750px" }}>
         <br></br>
@@ -51,10 +51,10 @@ const Navbars = () => {
         </p>
       </Container>
       <br></br>
-      <p className="lead">Centered Navbar</p>
+      <p className="lead"><strong>Centered Navbar</strong></p>
       <CenteredNavbar />
       <br></br>
-      <p className="lead">Right Search Navbar</p>
+      <p className="lead"><strong>Right Search Navbar</strong></p>
       <RightSearchNavbar />
     </Layout>
   );

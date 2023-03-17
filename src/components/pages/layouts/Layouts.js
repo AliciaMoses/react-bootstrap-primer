@@ -6,7 +6,7 @@ const Layouts = () => {
   return (
     <Layout>
       <h1 className="display-4 text-center">Layouts</h1>
-      <br></br>
+      <Container>
       <p className="lead text-center">
         Bootstrap uses a 12-column grid system to layout content on a page.
         Containers are used to provide a fixed-width container for content, and
@@ -19,6 +19,7 @@ const Layouts = () => {
         This flexibility makes it easy to create responsive designs that look
         great on any device.
       </p>
+      </Container>
       <div style={{ backgroundColor: "#F2F2F2", padding: "50px" }}>
         <Container style={{ backgroundColor: "white", padding: "20px" }}>
           <Row>
