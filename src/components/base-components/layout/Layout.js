@@ -1,14 +1,15 @@
-import React from 'react';
-import './Layout.css';
-import AppNavbar from '../app-navbar/AppNavbar';
-
+import React from "react";
+import "./Layout.css";
+import AppNavbar from "../app-navbar/AppNavbar";
+import BottomNavigation from "../BottomNavigation";
 
 const Layout = ({ children }) => (
-    <>
-        <AppNavbar />
+  <>
+    <AppNavbar />
 
-        <main style={{ paddingBottom: '80px', padding: '1px' }} >{children}</main>
-    </>
+    <main className="main-content">{children}</main>
+    <BottomNavigation />
+  </>
 );
 
 export default Layout;

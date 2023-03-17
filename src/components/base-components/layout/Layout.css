@@ -1,0 +1,4 @@
+.main-content {
+    min-height: calc(100vh - HEADER_HEIGHT - FOOTER_HEIGHT);
+    padding-bottom: 180px;
+  }
