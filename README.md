@@ -45,12 +45,16 @@ This educational app is designed to teach users about the most common components
 
 ## Installation
 
+
+(Optional) Create a fork of this repository on GitHub by clicking the "Fork" button in the upper right-hand corner of the repository page.
+
+
 To install the app locally, follow these steps:
 
 Clone the repository:
 
 ```bash
-git clone AliciaMoses/react-bootstrap-primer
+git clone https://github.com/AliciaMoses/react-bootstrap-primer.git
 ```
 Install dependencies:
 
